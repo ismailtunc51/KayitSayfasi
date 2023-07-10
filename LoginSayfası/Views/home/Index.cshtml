@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<center>
+    <h1>KAYIT SAYFASI</h1> 
+        <table>
+            <tr>
+                <td style="font-size:25px">@Html.Label("Kullanıcı Adı:")</td>
+                <td>@Html.TextBox("kullanıcı")</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px">@Html.Label("Şifre:")</td>
+                <td>@Html.Password("sifre")</td>
+            </tr>
+            <tr>
+                <td style="font-size:25px">@Html.Label("E-Mail:")</td>
+                <td>@Html.TextBox("email")</td>
+            </tr>
+        </table>
+
+        <b style="font-size:23px">Lütfen Adres Bilgilerinizi Giriniz</b>
+        <br />
+        <a style="margin-left:-30px"> @Html.TextArea("not",new { cols = 70, rows = 10 });</a>
+        <br />
+        <a style="margin-left:-60px">
+            @Html.CheckBox("chk1", false);@Html.Label("Üyelik Sözleşmesini Kabul Ediyorum");
+        </a>
+            <br />
+         <a><Input style="color:blue" type="button" value="GÖNDER" /></a>   
+</center>
+
+
